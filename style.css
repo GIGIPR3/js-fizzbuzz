@@ -1,5 +1,38 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --background-black: black;
+    --body-text: white;
+    --num-col: 9;
+    --basic-box: rgb(19, 137, 178);
+    --fizz: rgb(12, 214, 161);
+    --buzz: rgb(255, 209, 102);
+    --fizzbuzz: rgb(240, 70, 111);
+}
+
+.box{
+    width: calc(100% / var(--num-col) - 5px);
+    margin-bottom: 5px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--basic-box);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box--fizz{
+    background-color: var(--fizz);
+}
+
+.box--buzz{
+    background-color: var(--buzz);
+}
+
+.box--fizzbuzz{
+    background-color: var(--fizzbuzz);
 }
